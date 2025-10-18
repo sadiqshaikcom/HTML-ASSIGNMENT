@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .pricing-table {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 850px; 
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+    th {
+      background: #f9f9f9;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .header-row th {
+      background: #f1f1f1;
+      font-size: 22px;
+      text-align: left;
+      padding-left: 20px;
+      text-transform: uppercase;
+      color: #444;
+    }
+    .starter {
+      background: #4db6e2;
+      color: #fff;
+    }
+    .econo {
+      background: #3ca9d7;
+      color: #fff;
+    }
+    .standard {
+      background: #2f80c0;
+      color: #fff;
+      position: relative;
+    }
+    .professional {
+      background: #1f4b8c;
+      color: #fff;
+      position: relative;
+    }
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .per-month {
+      font-size: 14px;
+    }
+    button {
+      background: #eee;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #ddd;
+    }
+    .highlight {
+      background: gold;
+      color: #000;
+      font-size: 12px;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 4px 8px;
+      border-bottom-left-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="pricing-table">
+  <table>
+    <!-- Choose Plan Row -->
+    <tr class="header-row">
+      <th>Choose your plan</th>
+      <th class="starter">Starter</th>
+      <th class="econo">Econo</th>
+      <th class="standard">Standard <span class="highlight">HOT</span></th>
+      <th class="professional">Professional <span class="highlight">HOT</span></th>
+    </tr>
+    <!-- Price Row -->
+    <tr>
+      <td></td>
+      <td class="starter"><div class="price">$10</div><div class="per-month">per month</div></td>
+      <td class="econo"><div class="price">$30</div><div class="per-month">per month</div></td>
+      <td class="standard"><div class="price">$59</div><div class="per-month">per month</div></td>
+      <td class="professional"><div class="price">$99</div><div class="per-month">per month</div></td>
+    </tr>
+    <!-- Amount of space -->
+    <tr>
+      <td>Amount of space</td>
+      <td>10GB</td>
+      <td>30GB</td>
+      <td>100GB</td>
+      <td>Unlimited</td>
+    </tr>
+    <!-- Bandwidth -->
+    <tr>
+      <td>Bandwidth per month</td>
+      <td>100GB</td>
+      <td>200GB</td>
+      <td>500GB</td>
+      <td>1000GB</td>
+    </tr>
+    <!-- Email accounts -->
+    <tr>
+      <td>No. of e-mail accounts</td>
+      <td>1</td>
+      <td>10</td>
+      <td>50</td>
+      <td>Unlimited</td>
+    </tr>
+    <!-- Databases -->
+    <tr>
+      <td>No. of MySql databases</td>
+      <td>1</td>
+      <td>10</td>
+      <td>50</td>
+      <td>Unlimited</td>
+    </tr>
+    <!-- Support -->
+    <tr>
+      <td>24h support</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <!-- Tickets -->
+    <tr>
+      <td>Support tickets per mo.</td>
+      <td>1</td>
+      <td>3</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <!-- Buttons -->
+    <tr>
+      <td></td>
+      <td><button>Sign up!</button></td>
+      <td><button>Sign up!</button></td>
+      <td><button>Sign up!</button></td>
+      <td><button>Sign up!</button></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
